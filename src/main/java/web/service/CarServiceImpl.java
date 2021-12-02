@@ -7,9 +7,10 @@ import java.util.List;
 
 public class CarServiceImpl implements CarService {
 
+    private List <Car> list = new ArrayList<>();
+
     @Override
     public List<Car> getList(int count) {
-        List <Car> list = new ArrayList<>();
         list.add(new Car("supra", 1, 1998));
         list.add(new Car("mustang", 2, 1995));
         list.add(new Car("astra", 3, 2009));
